@@ -1,7 +1,7 @@
 {
     "name": "iTheme ++",
     "description": "Theme Pack That merges iTheme with iVanced features",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "yazninja",
     "github_repo": "yazninja/itheme-plus-plus",
     "directives": {
@@ -24,6 +24,11 @@
             "name": "iTheme++ Animations",
             "description": "Use Custom Animations similar to sweetener",
             "file": "pack/appleDrawer.less"
+        },
+        {
+            "name": "iTheme OLED",
+            "description": "Super Dark iTheme",
+            "file": "pack/OLED.less"
         }
     ]
 }
