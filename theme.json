@@ -27,7 +27,7 @@
             "file": "pack/forcelight.less"
         },
         {
-            "name": "Force Dark iTheme",
+            "name": "Force Dark iTheme (broken)",
             "description": "Use Custom Animations similar to sweetener",
             "file": "pack/forcedark.less"
         },
