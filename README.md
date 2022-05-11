@@ -1,4 +1,4 @@
-# iTheme++ Theme Pack for [Cider](https://cider.sh/) <img src="https://img.shields.io/github/stars/yazninja/apple-cider-lite?style=social" width="70"></img>
+# iTheme++ Theme Pack for [Cider](https://cider.sh/) <img src="https://img.shields.io/github/stars/yazninja/itheme-plus-plus?style=social" width="70"></img>
 
 Cider theme pack based from the Apple Music beta app in MacOS Monterey.
 Best used with `Mica(beta)` option in settings.
