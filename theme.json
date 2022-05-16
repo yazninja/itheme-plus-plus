@@ -1,7 +1,7 @@
 {
     "name": "iTheme ++",
     "description": "Theme Pack That merges iTheme with iVanced features",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "yazninja",
     "github_repo": "yazninja/itheme-plus-plus",
     
@@ -35,6 +35,11 @@
             "name": "iTheme OLED",
             "description": "Super Dark iTheme",
             "file": "pack/OLED.less"
+        },
+        {
+            "name": "Sleek Tab Underline",
+            "description": "New tab idea",
+            "file": "pack/tabidea.less"
         }
     ]
 }

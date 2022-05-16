@@ -1,0 +1,39 @@
+#app{
+    --borderColor: whitesmoke;
+    #app-main{
+        .nav.nav-pills.nav-fill{
+            background-color: transparent
+        }
+        .nav-pills:after{
+            content: none
+        }
+        .nav-link.active{
+            color:rgba(255,255,255,.8);
+            box-shadow: none;
+        }
+        .nav-link::after{
+            border-radius: 0;
+            inset-block-end: -5px;
+            inset-inline: 100%;
+            border-bottom: 2px solid var(--borderColor);
+            transition: inset-inline 1s var(--appleEase),
+            display 1s var(--appleEase);
+        }
+        .nav-link:hover{
+            box-shadow: none;
+            color:rgba(255,255,255,.8);
+            &::after{
+                background: transparent;
+                border-bottom: 2px solid var(--borderColor);
+                inset-inline: 30%;
+                transition: inset-inline 0.5s var(--appleEase);
+            }
+            
+        }
+        .nav-link.active::after{
+            background: transparent;
+            border-bottom: 2px solid var(--borderColor);
+            inset-inline: 10%;
+        }
+    }
+}
