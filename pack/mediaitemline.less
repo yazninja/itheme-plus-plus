@@ -1,0 +1,33 @@
+.content-inner {
+    --accentLine: 1px solid hsla(0, 0%, 50%, 0.3);
+    .mediaitem-list-item__grid {
+        background-color: transparent !important;
+        box-shadow: none;
+    }
+
+    .listitem-horizontal .cd-mediaitem-list-item {
+        margin-inline   : 3px;
+        background-color: transparent !important;
+        border-top      : var(--accentLine);
+        border-radius   : 0;
+    }
+
+    .vue-horizontal {
+        border-bottom: var(--accentLine);
+    }
+
+    .listitem-horizontal>.vue-horizontal,
+    .cd-hmedia-scroller.hmedia-scroller-card:first-of-type>.vue-horizontal,
+    &>div:first-of-type>.hmedia-scroller-card>.vue-horizontal {
+        border-bottom: 0;
+    }
+
+    .arow.well {
+        border-radius: 0;
+        border-bottom: var(--accentLine);
+    }
+    .header-text{
+        padding-bottom: 1rem;
+        border-bottom: var(--accentLine);
+    }
+}
