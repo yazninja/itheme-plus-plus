@@ -6,9 +6,10 @@
     &:not(.modular-fs) {
         .app-drawer {
             border-radius: 0px;
-            top          : 0;
+            bottom          : 0;
             right        : 0;
-            height       : 100%;
+            top: var(--chromeHeight);
+            height       : calc(100% - var(--chromeHeight));
             box-shadow   : unset;
             border-top   : @panelBorder;
             border-bottom: @panelBorder;
