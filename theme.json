@@ -45,6 +45,11 @@
             "name": "Modern Line Accents",
             "description": "New line idea",
             "file": "pack/mediaitemline.less"
+        },
+        {
+            "name": "Rounded Corner Support",
+            "description": "Rounded Cornersss",
+            "file": "pack/roundedcorners.less"
         }
     ]
 }
