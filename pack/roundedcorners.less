@@ -1,3 +1,9 @@
-body{
+body {
     border-radius: 0.5em;
+    border       : 0.5px solid hsl(0, 0%, 50%);
+}
+
+.app-chrome::before {
+    border-top-right-radius: 0.5em;
+    width                  : calc(100% - var(--sidebarWidth) - 1);
 }
