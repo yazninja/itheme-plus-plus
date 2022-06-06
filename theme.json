@@ -19,6 +19,11 @@
         {
             "name": "iTheme++ Animations",
             "description": "Use Custom Animations similar to sweetener",
+            "file": "pack/animations.less"
+        },
+        {
+            "name": "Apple Inline Drawers",
+            "description": "Use Custom Animations similar to sweetener",
             "file": "pack/appleDrawer.less"
         },
         {
