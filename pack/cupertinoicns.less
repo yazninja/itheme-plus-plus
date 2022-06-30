@@ -32,14 +32,15 @@
         // Mac Style Playback buttons
 
         .playback-button--small.shuffle.active {
-            -webkit-mask-image: var(--shuffleIconActive);
+            -webkit-mask-image   : var(--shuffleIconActive);
             -webkit-mask-position: center;
-            -webkit-mask-size: 75%;
-            -webkit-mask-repeat: no-repeat;
-            background-image: none;
-            background-color: var(--keyColor);
-            opacity         : 1;
-            &::before{
+            -webkit-mask-size    : 75%;
+            -webkit-mask-repeat  : no-repeat;
+            background-image     : none;
+            background-color     : var(--keyColor);
+            opacity              : 1;
+
+            &::before {
                 display: none;
             }
 
@@ -54,28 +55,30 @@
         }
 
         .playback-button--small.repeat.repeatOne {
-            -webkit-mask-image: var(--repeatIconRepeatOne);
+            -webkit-mask-image   : var(--repeatIconRepeatOne);
             -webkit-mask-position: center;
-            -webkit-mask-size: 75%;
-            -webkit-mask-repeat: no-repeat;
-            background-image: none;
-            background-color: var(--keyColor);
-            opacity         : 1;
-            &::before{
+            -webkit-mask-size    : 75%;
+            -webkit-mask-repeat  : no-repeat;
+            background-image     : none;
+            background-color     : var(--keyColor);
+            opacity              : 1;
+
+            &::before {
                 display: none;
             }
 
         }
 
         .playback-button--small.repeat.active {
-            -webkit-mask-image: var(--repeatIconActive);
+            -webkit-mask-image   : var(--repeatIconActive);
             -webkit-mask-position: center;
-            -webkit-mask-size: 75%;
-            -webkit-mask-repeat: no-repeat;
-            background-image: none;
-            background-color: var(--keyColor);
-            opacity         : 1;
-            &::before{
+            -webkit-mask-size    : 75%;
+            -webkit-mask-repeat  : no-repeat;
+            background-image     : none;
+            background-color     : var(--keyColor);
+            opacity              : 1;
+
+            &::before {
                 display: none;
             }
 
@@ -160,21 +163,39 @@
                 color: transparent !important;
             }
 
-            .sidebar-icon>svg.feather.feather-play-circle {
+            .sidebar-icon>svg.feather.feather-play-circle,
+            .app-sidebar-item>div[svg-name='sidebar-listenNow'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--listenNowIcon);
+                --size             : 20px;
+                --icon             : var(--listenNowIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--listenNowIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-globe {
+            .sidebar-icon>svg.feather.feather-globe,
+            .app-sidebar-item>div[svg-name='sidebar-browse'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--browseIcon);
+                --size             : 20px;
+                --icon             : var(--browseIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--browseIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-radio {
+            .sidebar-icon>svg.feather.feather-radio,
+            .app-sidebar-item>div[svg-name='sidebar-radio'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--radioIcon);
+                --size             : 20px;
+                --icon             : var(--radioIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--radioIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
@@ -182,35 +203,65 @@
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-plus-circle {
+            .sidebar-icon>svg.feather.feather-plus-circle,
+            .app-sidebar-item>div[svg-name='sidebar-recentlyAdded'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--recentsIcon);
+                --size             : 20px;
+                --icon             : var(--recentsIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--recentsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-music {
+            .sidebar-icon>svg.feather.feather-music,
+            .app-sidebar-item>div[svg-name='sidebar-songs'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--songsIcon);
+                --size             : 20px;
+                --icon             : var(--songsIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--songsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-disc {
+            .sidebar-icon>svg.feather.feather-disc,
+            .app-sidebar-item>div[svg-name='sidebar-albums'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--albumsIcon);
+                --size             : 20px;
+                --icon             : var(--albumsIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--albumsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-user {
+            .sidebar-icon>svg.feather.feather-user,
+            .app-sidebar-item>div[svg-name='sidebar-artists'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--artistsIcon);
+                --size             : 20px;
+                --icon             : var(--artistsIcon) !important;
+                -webkit-mask-size  : 120%;
                 background-image   : var(--artistsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-video {
+            .sidebar-icon>svg.feather.feather-video,
+            .app-sidebar-item>div[svg-name='sidebar-videos'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--videosIcon);
+                --size             : 20px;
+                --icon             : var(--videosIcon) !important;
+                -webkit-mask-size  : contain;
                 background-image   : var(--videosIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
@@ -218,7 +269,13 @@
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-mic {
+            .sidebar-icon>svg.feather.feather-mic,
+            .app-sidebar-item>div[svg-name='sidebar-podcasts'] {
+                background         : var(--keyColor) !important;
+                background-image   : var(--podcastsIcon);
+                --size             : 20px;
+                --icon             : var(--podcastsIcon) !important;
+                -webkit-mask-size  : contain;
                 background-image   : var(--podcastsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
@@ -226,7 +283,11 @@
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-list {
+            .sidebar-icon>svg.feather.feather-list,
+            .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'] {
+                background         : white !important;
+                --icon             : var(--playlistsIcon) !important;
+                -webkit-mask-size  : 135%;
                 background-image   : var(--playlistsIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
@@ -234,7 +295,15 @@
                 color              : transparent;
             }
 
-            .sidebar-icon>svg.feather.feather-folder {
+            .app-sidebar-item-playlist>._svg-icon {
+                background-image: none;
+            }
+
+            .sidebar-icon>svg.feather.feather-folder,
+            .playlist-folder>div[svg-name='sidebar-playlist'] {
+                background         : white !important;
+                --icon             : var(--playlistFoldersIcon) !important;
+                -webkit-mask-size  : 135%;
                 background-image   : var(--playlistFoldersIcon);
                 background-repeat  : no-repeat;
                 background-position: center;
@@ -242,8 +311,11 @@
                 color              : transparent;
             }
 
-            .sidebar-icon .feather-home {
-                color: var(--keyColor) !important;
+            .sidebar-icon .feather-home,
+            .app-sidebar-item>div[svg-name='sidebar-home'] {
+                color     : var(--keyColor) !important;
+                background: var(--keyColor);
+
             }
 
             .sidebar-playlist>button>.sidebar-icon>svg.feather-list {
