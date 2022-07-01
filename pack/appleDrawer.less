@@ -44,3 +44,12 @@
         }
     }
 }
+#app.twopanel{
+    &:not(.modular-fs) {
+        .app-drawer {
+            bottom       : calc(var(--chromeHeight2));
+            top          : calc(var(--chromeHeight1) * 1.5 - var(--chromeHeight2)) !important;
+            height       : calc(100% - var(--chromeHeight1) - var(--chromeHeight2)) !important;
+        }
+    }
+}
