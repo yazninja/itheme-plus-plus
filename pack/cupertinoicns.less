@@ -303,6 +303,7 @@
                 background         : white !important;
                 --icon             : var(--playlistsIcon) !important;
                 -webkit-mask-size  : 135%;
+                aspect-ratio: 1;
             }
 
             .app-sidebar-item-playlist>._svg-icon {
@@ -320,6 +321,7 @@
                 background         : white !important;
                 --icon             : var(--playlistFoldersIcon) !important;
                 -webkit-mask-size  : 135%;
+                aspect-ratio: 1;
             }
 
             .sidebar-icon .feather-home{
@@ -465,6 +467,10 @@
             .search-input--icon {
                 filter: invert(0.8);
             }
+            .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
+                filter: invert(1);
+            }
+            
         }
     }
 }
@@ -496,6 +502,9 @@
 
             .search-input--icon {
                 filter: invert(0.8);
+            }
+            .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
+                filter: invert(1);
             }
         }
     }
