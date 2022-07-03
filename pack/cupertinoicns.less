@@ -339,6 +339,17 @@
 
         .modal-fullscreen .modal-window {
             .modal-content .sidebar-playlist {
+                .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'] {
+                    --icon             : var(--playlistsIcon) !important;
+                    -webkit-mask-size  : 135%;
+                    aspect-ratio: 1;
+                }
+                .playlist-folder>div[svg-name='sidebar-playlist'] {
+                    --icon             : var(--playlistFoldersIcon) !important;
+                    -webkit-mask-size  : 135%;
+                    aspect-ratio: 1;
+                }
+                // legacy
                 .sidebar-icon>svg {
                     &.feather-list {
                         background-image   : var(--playlistsIcon);
@@ -347,6 +358,7 @@
                         background-size    : 130%;
                         color              : transparent !important;
                     }
+                    
 
                     &.feather-folder {
                         background-image   : var(--playlistFoldersIcon);
@@ -468,9 +480,12 @@
             .search-input--icon {
                 filter: invert(0.8);
             }
-            .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
-                filter: invert(1);
+            #app-sidebar{
+                .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
+                    filter: invert(1);
+                }
             }
+            
             
         }
     }
@@ -504,8 +519,10 @@
             .search-input--icon {
                 filter: invert(0.8);
             }
-            .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
-                filter: invert(1);
+            #app-sidebar{
+                .app-sidebar-item-playlist>div[svg-name='sidebar-playlist'], .playlist-folder>div[svg-name='sidebar-playlist']{
+                    filter: invert(1);
+                }
             }
         }
     }
