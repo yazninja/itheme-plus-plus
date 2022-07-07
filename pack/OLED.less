@@ -1,3 +1,5 @@
+@mediaColor: rgb(85, 85, 85);
+@volumeThumbColor: rgb(44, 44, 44);
 :root {
 	--sidebarColor: #000;
 	--sidebarColorLighter: #0a0a0a;
@@ -55,4 +57,208 @@ div#app {
 .model-content {
 	border: 2px solid var(--panelColor2);
 	background-color: var(--sidebarColor);
+}
+@media (prefers-color-scheme) {
+	:root {
+		--baseColor: #1f1f1f;
+		--baseColorMix: rgba(31, 31, 31, 0.85);
+		--sidebarColor: #000;
+		--sidebarColorLighter: #0a0a0a;
+		--mediaColor: #555555;
+		--mediaColorMix: rgba(85, 85, 85, 0.65);
+		--mediaContainerColor: #2e2e2d;
+		--songProgressColor: #b8b8b8;
+		--volumeThumbColor: #2c2c2c;
+		--keyColor: #fa586a;
+		--keyColorSubtle: rgba(250, 88, 106, 0.75);
+		--ciderColor: #ff2654;
+		--artistHoverColor: rgba(250, 35, 59, 0.8);
+		--activeTabColor: rgba(250, 88, 106, 0.25);
+		--volumeTrackColor: rgba(200, 200, 200, 0.3);
+		--categoriesColor: rgba(50, 50, 50, 0.5);
+		--searchBackgroundColor: rgba(31, 31, 31, 0.6);
+		--searchBarBackgroundColor: rgba(0, 0, 0, 0.3);
+		--menuBackgroundColor: rgba(36, 36, 36, 0.5);
+		--textColor: #fafafa;
+		--textColorLight: #fff;
+		--modalBorderColor: rgba(68, 68, 68, 0.4);
+		--modalBorderSubtleColor: hsla(0, 0%, 50%, 0.2);
+		--appBorderColor: hsla(0, 0%, 50%, 0.5);
+		--contentBorderColor: hsla(0, 0%, 50%, 0.4);
+		--subtleBorderColor: hsla(0, 0%, 50%, 0.2);
+		--contentWidth: calc(100vw - 346px);
+		--sidebarWidth: 260px;
+	}
+	div#app {
+		--color1: var(--sidebarColor);
+		--color2: var(--sidebarColor);
+		background: var(--sidebarColor);
+	}
+	#app-sidebar {
+		background: var(--sidebarColor);
+		border-right: none !important;
+	}
+	#app-main .app-chrome::before {
+		background: var(--sidebarColor);
+		box-shadow: none !important;
+	}
+	#app-main .app-chrome button.playback-button:not(.collapseLibrary),
+	#app-main .app-chrome button.playback-button--small.queue,
+	#app-main .app-chrome button.volume-button--small,
+	#app-main .app-chrome .window-controls,
+	#app-main .app-chrome .window-controls .close:hover {
+		filter: none !important;
+	}
+	#app-main .app-chrome button.playback-button--small.cast,
+	#app-main .app-chrome button.playback-button--small.repeat,
+	#app-main .app-chrome button.playback-button--small.shuffle,
+	#app-main .app-chrome button.playback-button--small.lyrics {
+		filter: none !important;
+	}
+	#app-main .app-chrome .app-playback-controls {
+		border: none !important;
+	}
+	.app-navigation
+		#app-content
+		.md-select:not(.md-btn-primary):not(.md-btn-replay):not(.md-btn-replay--hero) {
+		color: var(--textColor);
+		background: var(--menuBackgroundColor);
+		border: 1px solid var(--contentBorderColor);
+	}
+	.md-select > option,
+	.md-select > optgroup,
+	.md-select optgroup > option {
+		background: #404040 !important;
+	}
+	.md-btn:not(.md-btn-replay) {
+		background: rgba(100, 100, 100, 0.25);
+		border: 1px solid rgba(100, 100, 100, 0.35);
+		color: #eee;
+	}
+	.app-navigation #app-content .library-page .library-header {
+		background: rgba(0, 0, 0, 0.25);
+		backdrop-filter: blur(32px);
+	}
+	.app-navigation #app-content .md-btn-primary {
+		background: #ff2b52a6;
+		color: white;
+		border: 1px solid rgba(220, 53, 69, 0.25);
+		border-top: 1px solid rgba(220, 53, 69, 0.5);
+	}
+	.app-navigation
+		#app-content
+		.playlist-page
+		.cd-mediaitem-list-item:nth-child(odd) {
+		background: rgba(255, 255, 255, 0.05) !important;
+	}
+	.app-navigation
+		#app-content
+		.playlist-page
+		.cd-mediaitem-list-item:nth-child(odd)
+		.app-chrome {
+		background: var(--sidebarColor);
+		box-shadow: none !important;
+	}
+	.app-navigation #app-sidebar ._svg-icon[svg-name='sidebar-playlist'] {
+		filter: none !important;
+	}
+	.app-navigation #app-content .playlist-body.scrollbody {
+		--color3: none !important;
+	}
+	.settings-panel .settings-window {
+		background: var(--baseColorMix) !important;
+	}
+	.settings-panel .settings-window .close-btn:not(.minmax-btn)::before {
+		color: var(--textColor);
+	}
+	.settings-panel .settings-window .tabs .col-auto {
+		background: var(--sidebarColor);
+	}
+	.settings-panel .settings-window .tabs > .col-auto {
+		background: var(--sidebarColor);
+	}
+	.settings-panel .settings-window .tabs .col-auto .nav-link {
+		color: #fff !important;
+	}
+	.settings-panel {
+		background: rgba(0, 0, 0, 0.1);
+	}
+	#app-main
+		.app-chrome
+		.app-chrome--center
+		.app-playback-controls
+		.playback-info {
+		background: var(--sidebarColor);
+	}
+	.app-chrome-item.volume input[type='range'] {
+		background-color: transparent;
+		height: 20px;
+		&::-webkit-slider-runnable-track {
+			background: var(--volumeTrackColor);
+			filter: none !important;
+			height: 4px;
+			border-radius: 4px;
+		}
+		&::-webkit-slider-thumb {
+			position: relative;
+			border: 1px solid hsl(0, 0%, 50%);
+			background: mix(@volumeThumbColor, @mediaColor, 50%);
+			margin-top: -5px;
+		}
+	}
+	.app-navigation {
+		#app-sidebar {
+			.search-input--icon {
+				filter: none !important;
+			}
+			.app-sidebar-header-text {
+				filter: none !important;
+				font-weight: 600;
+			}
+		}
+	}
+	#app-content {
+		background: var(--sidebarColorLighter);
+		border-left: none !important;
+	}
+	.settings-panel .settings-window {
+		.tabs {
+			border: 2px solid var(--panelColor2);
+			.tab-content {
+				background: var(--sidebarColorLighter);
+			}
+		}
+		.tabs > .col-auto {
+			background: var(--sidebarColor);
+		}
+	}
+	.modal-fullscreen {
+		backdrop-filter: blur(16px) brightness(0.5) !important;
+		.modal-content,
+		.modal-fullscreen .md-footer {
+			background-color: var(--sidebarColorLighter) !important;
+		}
+	}
+	.modal-fullscreen .modal-window {
+		.modal-header {
+			background-color: var(--sidebarColor);
+		}
+		.modal-content,
+		.modal-fullscreen .modal-window .md-footer {
+			background-color: var(--sidebarColorLighter);
+		}
+		.md-footer {
+			background-color: var(--sidebarColor);
+		}
+	}
+	.model-content {
+		border: 2px solid var(--panelColor2);
+		background-color: var(--sidebarColor);
+	}
+	input[type='number'],
+	input[type='text'] {
+		background: #1c1c1c !important;
+		color: #eee !important;
+		border: 1px solid rgba(200, 200, 200, 0.25) !important;
+	}
 }
