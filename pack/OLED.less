@@ -1,10 +1,36 @@
-:root,
-:root.dark {
-    #app {
-        // only put colors that have been chnaged here
-        --color1: rgba(0, 0, 0, 0.3);
-        --color2: rgba(0, 0, 0, 0.9);
-        --mediaBarColor           : rgba(0, 0, 0, 0.3);
-        --topBarColor             : rgba(11, 11, 11, 1);
-    }
+:root {
+	--sidebarColor: #000;
+	--sidebarColorLighter: #0a0a0a;
+}
+div#app {
+	--color1: var(--sidebarColor);
+	--color2: var(--sidebarColor);
+	background: var(--sidebarColor);
+}
+
+#app-sidebar {
+	background: var(--sidebarColor);
+	border-right: none !important;
+}
+
+#app-main .app-chrome::before {
+	background: var(--sidebarColor);
+}
+
+.app-chrome {
+	background: var(--sidebarColor);
+	box-shadow: none !important;
+}
+
+#app-main
+	.app-chrome
+	.app-chrome--center
+	.app-playback-controls
+	.playback-info {
+	background: var(--sidebarColor);
+}
+
+.app-navigation #app-content {
+	background: var(--sidebarColorLighter);
+	border-left: none !important;
 }
