@@ -172,7 +172,7 @@ div#app {
 		color: var(--textColor);
 	}
 	.settings-panel .settings-window .tabs .col-auto {
-		background: var(--sidebarColor);
+		background: var(--sidebarColorLighter);
 	}
 	.settings-panel .settings-window .tabs > .col-auto {
 		background: var(--sidebarColor);
@@ -260,5 +260,67 @@ div#app {
 		background: #1c1c1c !important;
 		color: #eee !important;
 		border: 1px solid rgba(200, 200, 200, 0.25) !important;
+	}
+	.list-group-item-dark {
+		background-color: var(--sidebarColorLighter) !important;
+	}
+	.bootbox.modal .modal-content .bootbox-close-button:not(:hover) {
+		filter: none !important;
+	}
+	.modal-content {
+		background-color: var(--sidebarColorLighter);
+	}
+	#app.twopanel #app-main .app-chrome:not(.chrome-bottom)::before {
+		background-color: var(--sidebarColor) !important;
+	}
+	#app.twopanel #app-main .chrome-bottom {
+		--color2: var(--sidebarColor) !important;
+		backdrop-filter: none !important;
+	}
+	#app.twopanel #app-main .app-chrome--center .top-nav-group {
+		background: var(--sidebarColorLighter) !important;
+	}
+	#app.twopanel
+		#app-main
+		.app-chrome--center
+		.top-nav-group
+		.app-sidebar-item
+		._svg-icon {
+		background: #eee !important;
+	}
+	#app.twopanel #app-main .app-chrome--center .top-nav-group .app-sidebar-item {
+		color: #eee !important;
+	}
+	#app.twopanel
+		#app-main
+		.app-chrome--center
+		.top-nav-group
+		.app-sidebar-item.active::before,
+	#app.twopanel
+		#app-main
+		.app-chrome--center
+		.top-nav-group
+		.app-sidebar-item:hover::before {
+		background: #fff !important;
+	}
+	#app.twopanel #app-main .app-chrome:not(.chrome-bottom) .search-input {
+		background: var(--sidebarColorLighter) !important;
+		border: 1px solid rgba(100, 100, 100, 0.35) !important;
+		color: #c8c8c8 !important;
+	}
+	#app.twopanel #app-main .app-chrome:not(.chrome-bottom) .search-input--icon {
+		filter: none !important;
+		z-index: 69420 !important;
+	}
+	.content-inner.podcasts-page .podcasts-list {
+		background: var(--sidebarColorLighter) !important;
+		border-right: 1px solid rgba(100, 100, 100, 0.35) !important;
+	}
+	.content-inner.podcasts-page .episodes-list {
+		background: var(--sidebarColorLighter) !important;
+	}
+	.app-navigation .app-drawer {
+		background: var(--color2) !important;
+		backdrop-filter: blur(40px) saturate(180%) !important;
 	}
 }
