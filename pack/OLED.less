@@ -7,21 +7,17 @@ div#app {
 	--color2: var(--sidebarColor);
 	background: var(--sidebarColor);
 }
-
 #app-sidebar {
 	background: var(--sidebarColor);
 	border-right: none !important;
 }
-
 #app-main .app-chrome::before {
 	background: var(--sidebarColor);
 }
-
 .app-chrome {
 	background: var(--sidebarColor);
 	box-shadow: none !important;
 }
-
 #app-main
 	.app-chrome
 	.app-chrome--center
@@ -29,8 +25,18 @@ div#app {
 	.playback-info {
 	background: var(--sidebarColor);
 }
-
 .app-navigation #app-content {
 	background: var(--sidebarColorLighter);
 	border-left: none !important;
+}
+.settings-panel .settings-window {
+	.tabs {
+		border: 2px solid var(--panelColor2);
+		.tab-content {
+			background: var(--sidebarColorLighter);
+		}
+	}
+	.tabs > .col-auto {
+		background: var(--sidebarColor);
+	}
 }
