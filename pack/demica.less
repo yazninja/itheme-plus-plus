@@ -1,0 +1,37 @@
+#app-content {
+    background-color: rgb(31, 31, 31) !important;
+}
+
+@media (prefers-color-scheme: light) {
+    #app-content {
+        background-color: rgb(255, 255, 255) !important;
+    } 
+}
+
+#app {
+    .app-navigation {
+        &:not(.modular-fs) {
+            .app-drawer {
+                top          : 0 !important;
+                height       : 100% !important;
+                background   : var(--baseColor) !important;
+                padding-top: var(--chromeHeight1);
+            }
+        }  
+    }
+    &.twopanel {
+        .app-navigation {
+            &:not(.modular-fs) {
+                .app-drawer {
+                    top          : 0 !important;
+                    bottom       : 0 !important;
+                    margin-block : 0 !important;
+                    height       : 100% !important;
+                    background   : var(--baseColor) !important;
+                    padding-top  : var(--chromeHeight1);
+                    padding-bottom: var(--chromeHeight2);
+                }
+            }  
+        } 
+    }
+}
