@@ -4,7 +4,6 @@
     "version": "1.1.0",
     "author": "yazninja",
     "github_repo": "yazninja/itheme-plus-plus",
-    
     "pack": [
         {
             "name": "Cupertino Icons",
@@ -54,7 +53,12 @@
         {
             "name": "Rounded Corner Support",
             "description": "Rounded Cornersss",
-            "file": "pack/roundedcorners.less"
+            "file": "pack/roundedcorners.less" 
+        },
+        {
+            "name": "De-Mica iTheme",
+            "description": "De-Micas iTheme everywhere but the Sidebar",
+            "file": "pack/demica.less"
         }
     ]
 }
