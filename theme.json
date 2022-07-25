@@ -26,6 +26,11 @@
             "file": "pack/appleDrawer.less"
         },
         {
+            "name": "Legacy Support (Cider 1.5.0)",
+            "description": "Supports old Cider version",
+            "file": "pack/legacy.less"
+        },
+        {
             "name": "Force Light iTheme",
             "description": "Use Custom Animations similar to sweetener",
             "file": "pack/forcelight.less"

@@ -1,0 +1,26 @@
+:root{
+    --glassFilterHeavy: blur(64px) saturate(280%);
+}
+#app.twopanel {
+    #app-main {
+        .app-chrome:not(.chrome-bottom) {
+            .app-chrome--left {
+                .app-chrome-item:nth-of-type(3) {
+                    margin-RIGHT: 0px !important;
+                }
+            }
+        }
+    }
+}
+#app:not(.twopanel) {
+    #app-main {
+        .app-chrome {
+            .app-chrome--left {
+                .app-chrome-item:nth-of-type(3) {
+                    margin-RIGHT: 80px !important;
+                }
+            }
+        }
+    }
+}
+
