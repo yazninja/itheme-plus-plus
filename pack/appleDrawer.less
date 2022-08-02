@@ -1,7 +1,7 @@
 @panelBorder    : rgba(68, 68, 68, 0.4) 1px solid;
 @mainPanelColor : rgba(31, 31, 31, 0.6);
 
-#app {
+#app #app-main{
 
     &:not(.modular-fs) {
         .app-drawer {
@@ -44,12 +44,15 @@
         }
     }
 }
-#app.twopanel{
+
+#app.twopanel #app-main{
     &:not(.modular-fs) {
         .app-drawer {
-            bottom       : calc(var(--chromeHeight2));
-            top          : calc(var(--chromeHeight1) * 1.5 - var(--chromeHeight2)) !important;
-            height       : calc(100% - var(--chromeHeight1) - var(--chromeHeight2)) !important;
+            margin-top: -90px;
+            height       : calc(100% - (var(--chromeHeight1)* 1) - var(--chromeHeight2) * 1) !important;
+            border-top   : none;
+            border-bottom: none;
+            border-left  : none;
         }
     }
 }
