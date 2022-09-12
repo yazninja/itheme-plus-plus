@@ -2,8 +2,7 @@
 @mainPanelColor : rgba(31, 31, 31, 0.6);
 
 #app {
-
-    &:not(.modular-fs) {
+    .app-main:not(.modular-fs) {
         .app-drawer {
             border-radius: 0px;
             bottom       : 0;
@@ -46,13 +45,14 @@
 }
 
 #app.twopanel {
-    &:not(.modular-fs) {
+    .app-main:not(.modular-fs) {
         .app-drawer {
-            margin-top: -90px;
+            margin-top: -167px;
             height       : calc(100% - (var(--chromeHeight1)* 1) - var(--chromeHeight2) * 1) !important;
             border-top   : none;
             border-bottom: none;
             border-left  : none;
+            // background: var(--keyColor) !important;
         }
     }
 }
