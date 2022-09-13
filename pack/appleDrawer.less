@@ -5,10 +5,11 @@
     #app-main:not(.modular-fs) {
         .app-drawer {
             border-radius: 0px;
+            top          : 0;
             bottom       : 0;
             right        : 0;
-            top          : calc(var(--chromeHeight1) /2);
-            height       : calc(100% - var(--chromeHeight1)) !important;
+            padding-top  : var(--chromeHeight1);
+            height       : 100%;
             box-shadow   : unset;
             border-top   : @panelBorder;
             border-bottom: @panelBorder;
@@ -47,12 +48,21 @@
 #app.twopanel {
     #app-main:not(.modular-fs) {
         .app-drawer {
-            margin-top: -92.5px;
-            height       : calc(100% - (var(--chromeHeight1)* 1) - var(--chromeHeight2) * 1) !important;
-            border-top   : none;
-            border-bottom: none;
-            border-left  : none;
+            // margin-top   : -92.5px;
+            // height       : calc(100% - (var(--chromeHeight1)* 1) - var(--chromeHeight2) * 1) !important;
+            border-top    : none;
+            border-bottom : none;
+            border-left   : none;
             // background: var(--keyColor) !important;
+            padding-bottom: var(--chromeHeight2);
+
+            .lyric-footer {
+                bottom: calc(var(--chromeHeight2) + 5px);
+            }
         }
     }
+}
+
+#app #app-main.modular-fs .app-drawer {
+    z-index: 15 !important;
 }
