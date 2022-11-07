@@ -14,7 +14,7 @@
             .app-drawer {
                 // top          : 0 !important;
                 // height       : 100% !important;
-                background   : var(--baseColor) !important;
+                background   : rgb(39, 39, 39) !important;
                 // padding-top: var(--chromeHeight1);
                 z-index: 10;
             }
@@ -28,11 +28,42 @@
                     // bottom       : 0 !important;
                     // margin-block : 0 !important;
                     // // height       : 100% !important;
-                    background   : var(--baseColor) !important;
+                    background   : rgb(39, 39, 39) !important;
                     // padding-top  : var(--chromeHeight1);
                     // padding-bottom: var(--chromeHeight2);
                 }
             }  
         } 
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    #app {
+        .app-navigation {
+            &:not(.modular-fs) {
+                .app-drawer {
+                    // top          : 0 !important;
+                    // height       : 100% !important;
+                    background   : rgb(200, 200, 200) !important;
+                    // padding-top: var(--chromeHeight1);
+                    z-index: 10;
+                }
+            }  
+        }
+        &.twopanel {
+            .app-navigation {
+                &:not(.modular-fs) {
+                    .app-drawer {
+                        // top          : 0 !important;
+                        // bottom       : 0 !important;
+                        // margin-block : 0 !important;
+                        // // height       : 100% !important;
+                        background   : rgb(240, 240, 240) !important;
+                        // padding-top  : var(--chromeHeight1);
+                        // padding-bottom: var(--chromeHeight2);
+                    }
+                }  
+            } 
+        }
     }
 }
